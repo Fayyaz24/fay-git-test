@@ -3,14 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git remote</title>
+    <title>Portfolio Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello world</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vero nulla reprehenderit, laborum repellat maxime, neque, aliquid praesentium ipsum cumque cupiditate et molestiae! Dolor laudantium maiores nemo quia ea tempore.</p>
-    <li>
-        <ul>Software</ul>
-        <ul>engineer</ul>
-    </li>
+    <header class="header">
+        <nav class="navbar">
+            <h1 class="logo">MyPortfolio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="hero">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Explore my work and projects</p>
+        </div>
+    </header>
+    
+    <section class="parallax" id="about">
+        <div class="parallax-inner">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sollicitudin dolor.</p>
+        </div>
+    </section>
+
+    <section class="content" id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Description of Project 1.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Description of Project 2.</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Description of Project 3.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax" id="contact">
+        <div class="parallax-inner">
+            <h2>Contact Me</h2>
+            <p>Get in touch through my social media or send me an email.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 MyPortfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

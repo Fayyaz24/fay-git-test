@@ -1,3 +1,101 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parallax {
+    background: url('parallax-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.parallax-inner {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+}
+
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
 }
